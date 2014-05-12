@@ -5,6 +5,8 @@ $script = <<SCRIPT
 sudo apt-get install -y git build-essential 
 # The prerequisites
 sudo apt-get install -y libgnome-keyring-dev
+# Technically there are other prerequisties (node, nvm)
+#   but these are satisfied by the base box from vagrantcloud
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
